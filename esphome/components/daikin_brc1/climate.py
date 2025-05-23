@@ -18,4 +18,4 @@ CONFIG_SCHEMA = climate_ir.climate_ir_with_receiver_schema(DaikinBrcClimate).ext
 
 async def to_code(config):
     var = await climate_ir.new_climate_ir(config)
-    cg.add(var.set_fahrenheit(config[CONF_USE_FAHRENHEIT]))`
+    cg.add(var.set_fahrenheit(config[CONF_USE_FAHRENHEIT]))
